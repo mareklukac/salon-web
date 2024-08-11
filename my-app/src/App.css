@@ -6,4 +6,10 @@ html {
   background-image: url("./assets/backgroundImage.jpg");
   height: 3000px;
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.page-section {
+  padding: 100px 20px;
+  height: 100vh;
 }
