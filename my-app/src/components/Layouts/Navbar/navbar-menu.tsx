@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./navbar-menu.css";
+import logo from "../../../assets/logo_png.png";
 
 const NavMenu: React.FC = () => {
   const navRef = useRef<HTMLElement | null>(null);
@@ -19,27 +20,29 @@ const NavMenu: React.FC = () => {
   return (
     <nav className="nav" ref={navRef}>
       <div className="logo-button">
-        <a href="#home-section">Logo</a>
+        <a href="#home-section">
+          <img alt="logo" src={logo}></img>
+        </a>
       </div>
       <div className="nav-buttons">
         <ul className="nav-ul">
           <li className="nav-li">
-            <a href="#omne-section">O mne</a>
+            <a href="#omne-section">O MNE</a>
           </li>
           <li className="nav-li">
-            <a href="#procedury-section">Procedury</a>
+            <a href="#procedury-section">PROCEDURY</a>
           </li>
           <li className="nav-li">
-            <a href="#produkty-section">Produkty</a>
+            <a href="#produkty-section">PRODUKTY</a>
           </li>
           <li className="nav-li">
-            <a href="#cenik-section">Ceník</a>
+            <a href="#cenik-section">CENÍK</a>
           </li>
           <li className="nav-li">
-            <a href="#galeria-section">Galéria</a>
+            <a href="#galeria-section">GALÉRIA</a>
           </li>
           <li className="nav-li">
-            <a href="#kontakt-section">Kontakt</a>
+            <a href="#kontakt-section">KONTAKT</a>
           </li>
         </ul>
       </div>

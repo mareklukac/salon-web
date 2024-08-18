@@ -1,0 +1,88 @@
+.home-container {
+  position: relative; /* Container should be relative to position the image absolutely within it */
+  width: 100%; /* Adjust as needed */
+  height: 100vh; /* Full viewport height or adjust to your needs */
+  overflow: hidden; /* Hide any overflow */
+}
+
+.home-container h1 {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  font-family: "Ms Madi", cursive;
+  transform: translate(-50%, -50%); /* Center the button */
+  font-size: 100px;
+  font-weight: 200;
+  opacity: 0; /* Start with hidden text */
+  animation: fadeInH1 1s ease-in-out forwards; /* Animate the fade-in */
+}
+
+.home-container h3 {
+  position: absolute;
+  top: 84%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the button */
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  opacity: 0;
+  animation: fadeInH3 1s ease-in-out forwards;
+}
+
+.background-image {
+  filter: brightness(0.8);
+  position: absolute; /* Ensure it is positioned absolutely if it needs to cover a specific area */
+  top: 0; /* Align to top */
+  left: 0; /* Align to left */
+  width: 100%; /* Stretch to fill the container width */
+  height: 100%; /* Stretch to fill the container height */
+  object-fit: cover; /* Ensure the image covers the entire area, cropping as necessary */
+  overflow: hidden;
+  z-index: -1;
+}
+
+.order-button {
+  position: absolute;
+  z-index: 1;
+  top: 80%;
+  left: 50%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 3px 2px var(--soft-blush-pink, 20);
+  background-color: var(--soft-blush-pink);
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--charcoal-gray);
+  cursor: pointer;
+  transform: translate(-50%, -50%); /* Center the button */
+}
+
+.order-button:hover {
+  background-color: var(--creamy-white);
+  box-shadow: 0 3px 2px var(--creamy-white, 20);
+}
+
+@keyframes fadeInH1 {
+  from {
+    opacity: 0;
+    font-size: 75px;
+  }
+  to {
+    opacity: 1;
+    font-size: 100px;
+  }
+}
+
+@keyframes fadeInH3 {
+  from {
+    opacity: 0;
+    font-size: 30px;
+  }
+  to {
+    opacity: 1;
+    font-size: 40px;
+  }
+}

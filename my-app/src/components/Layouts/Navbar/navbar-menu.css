@@ -6,20 +6,21 @@
   align-items: center;
   height: 60px;
   padding: 0 20px;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
   background-color: rgba(0, 0, 0, 0);
+  letter-spacing: 2px;
+  z-index: 100000;
 }
 
 .nav.scrolled {
-  background-color: rgb(9, 1, 1);
+  background-color: var(--champagne-gold);
   background-image: none;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 15);
+  box-shadow: 0 3px 10px var(--champagne-gold, 20);
 }
 
 .nav-buttons {
   display: flex;
   justify-content: center;
-  gap: 15px;
 }
 
 .nav-ul {
@@ -32,15 +33,29 @@
 .nav-li {
   display: inline-block;
   padding: 10px 20px;
-  color: rgb(5, 1, 1);
+}
+
+.nav-li a:hover {
+  color: var(--creamy-white);
   cursor: pointer;
 }
 
-.nav-li:hover {
-  background-color: #e721f194;
+.nav.scrolled .nav-li a:hover {
+  color: var(--creamy-white);
 }
 
 .nav-li a {
   text-decoration: none;
-  color: white;
+  color: var(--charcoal-gray);
+}
+
+.logo-button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-button img {
+  max-width: 70px;
+  height: auto;
+  object-fit: contain;
 }
