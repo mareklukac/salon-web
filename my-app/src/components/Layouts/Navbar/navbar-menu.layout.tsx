@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import "./navbar-menu.css";
+import "./navbar-menu.layout.css";
 import logo from "../../../assets/logo_png.png";
 
 const NavMenu: React.FC = () => {
@@ -36,7 +36,7 @@ const NavMenu: React.FC = () => {
             <a href="#produkty-section">PRODUKTY</a>
           </li>
           <li className="nav-li">
-            <a href="#cenik-section">CENÍK</a>
+            <a href="#cenik-section">CENNÍK</a>
           </li>
           <li className="nav-li">
             <a href="#galeria-section">GALÉRIA</a>

@@ -2,19 +2,20 @@
   padding: 0;
   margin: 0;
   /* Primary Colors */
-  --primary-1: #f8d7da;
+  --primary-1: #fff0e9;
   --primary-2: #e0c28e;
   --primary-3: #faf8f6;
 
   /* Secondary Colors */
   --secondary-1: #8b5a7a;
   --secondary-2: #d1a7b7;
-  --secondary-3: #4a4a4a;
+  --secondary-3: #383838;
 
   /* Accent Colors */
   --accent-1: #b76e79;
   --accent-2: #e5e1e6;
-  font-family: "Roboto", sans-serif;
+  --accent-3: #e55e0c;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 body {

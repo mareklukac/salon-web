@@ -1,13 +1,13 @@
 import React from "react";
 import "./App.css";
-import Omne from "./components/Sections/Omne/omne-component";
-import Kontakt from "./components/Sections/Kontakt/kontakt-component";
-import Home from "./components/Sections/Home/home-component";
+import Omne from "./components/Sections/Omne/omne.component";
+import Kontakt from "./components/Sections/Kontakt/kontakt.component";
+import Home from "./components/Sections/Home/home.component";
 import Procedury from "./components/Sections/Procedury/procedury.component";
-import Produkty from "./components/Sections/Produkty/produkty-component";
-import Cenik from "./components/Sections/Cenik/cenik-component";
-import Galeria from "./components/Sections/Galeria/galeria-component";
-import NavMenu from "./components/Layouts/Navbar/navbar-menu";
+import Produkty from "./components/Sections/Produkty/produkty.component";
+import Cennik from "./components/Sections/Cennik/cennik.component";
+import Galeria from "./components/Sections/Galeria/galeria.component";
+import NavMenu from "./components/Layouts/Navbar/navbar-menu.layout";
 
 function App() {
   return (
@@ -26,8 +26,8 @@ function App() {
         <section id="produkty-section" className="page-section">
           <Produkty />
         </section>
-        <section id="cenik-section" className="page-section">
-          <Cenik />
+        <section id="cennik-section" className="page-section">
+          <Cennik />
         </section>
         <section id="galeria-section" className="page-section">
           <Galeria />

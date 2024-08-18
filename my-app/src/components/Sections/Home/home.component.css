@@ -2,39 +2,39 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .home-container h1 {
   position: absolute;
-  top: 70%;
+  top: 65%;
   left: 50%;
-  font-family: "Ms Madi", cursive;
+  font-family: Together;
   transform: translate(-50%, -50%);
-  font-size: 100px;
-  font-weight: 200;
+  font-size: 150px;
+  font-weight: 500;
   opacity: 0;
-  animation: fadeInH1 1s ease-in-out forwards; 
+  animation: fadeInH1 1s ease-in-out forwards;
+  color: #e55e0c;
 }
 
 .home-container h3 {
   position: absolute;
-  top: 79%;
+  top: 73%;
   left: 50%;
-  transform: translate(-50%, -50%); 
-  font-size: 40px;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
   font-weight: 400;
-  letter-spacing: 1px;
   opacity: 0;
   animation: fadeInH3 1s ease-in-out forwards;
 }
 
 .background-image {
-  filter: brightness(0.8);
+  filter: brightness(1);
   position: absolute;
-  top: 0; 
-  left: 0; 
-  width: 100%; 
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
   object-fit: cover;
   overflow: hidden;
@@ -44,45 +44,64 @@
 .order-button {
   position: absolute;
   z-index: 1;
-  top: 88%;
+  top: 85%;
   left: 50%;
-  padding: 10px 20px;
+  padding: 10px 30px;
   border: none;
   border-radius: 25px;
-  box-shadow: 0 3px 2px var(--primary-3, 20);
+  box-shadow: 0 1px 15px var(--accent-3, 20);
   background-color: var(--primary-3);
   text-decoration: none;
-  letter-spacing: 2px;
   font-weight: 500;
   font-size: 24px;
   color: var(--secondary-3);
   cursor: pointer;
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
+  letter-spacing: 1px;
+  animation: buttonPop 1s ease-in-out forwards;
 }
 
 .order-button:hover {
-  background-color: var(--primary-1);
-  box-shadow: 0 3px 2px var(--primary-1, 20);
+  background-color: var(--primary-3);
+  box-shadow: 0 1px 15px var(--accent-3, 20);
+  border: 1px solid #e55e0c;
+  color: var(--accent-3);
+}
+
+.order-button a {
+  text-decoration: none;
+  color: inherit;
 }
 
 @keyframes fadeInH1 {
   from {
     opacity: 0;
-    font-size: 75px;
+    font-size: 100px;
   }
   to {
     opacity: 1;
-    font-size: 100px;
+    font-size: 150px;
   }
 }
 
 @keyframes fadeInH3 {
   from {
     opacity: 0;
-    font-size: 30px;
+    font-size: 20px;
   }
   to {
     opacity: 1;
-    font-size: 40px;
+    font-size: 30px;
+  }
+}
+
+@keyframes buttonPop {
+  from {
+    opacity: 0;
+    top: 85%;
+  }
+  to {
+    opacity: 1;
+    top: 88%;
   }
 }

@@ -36,17 +36,18 @@
 }
 
 .nav-li a:hover {
-  color: var(--primary-3);
+  color: var(--accent-3);
   cursor: pointer;
 }
 
 .nav.scrolled .nav-li a:hover {
-  color: var(--primary-3);
+  color: var(--accent-3);
 }
 
 .nav-li a {
   text-decoration: none;
   color: var(--secondary-3);
+  font-weight: 700;
 }
 
 .logo-button a {

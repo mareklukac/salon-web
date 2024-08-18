@@ -1,0 +1,13 @@
+.divider-container {
+  display: flex;
+  justify-content: center;
+}
+
+.divider {
+  height: 4px;
+  width: 100px;
+  background-color: var(--accent-3);
+  border: none;
+  margin: 20px 0; /* Adjust the margin for spacing */
+  top: 20%;
+}
