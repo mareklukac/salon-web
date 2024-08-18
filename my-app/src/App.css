@@ -3,10 +3,10 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: var(--creamy-white);
+  background-color: var(--primary-3);
   font-weight: 500;
   scroll-behavior: smooth;
-  color: var(--charcoal-gray);
+  color: var(--secondary-3);
 }
 
 .page-section {
@@ -19,5 +19,5 @@ html {
 }
 
 .page-section:nth-child(2n) {
-  background-color: var(--champagne-gold);
+  background-color: var(--primary-1);
 }

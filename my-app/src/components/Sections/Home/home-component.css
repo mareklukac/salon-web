@@ -7,7 +7,7 @@
 
 .home-container h1 {
   position: absolute;
-  top: 75%;
+  top: 70%;
   left: 50%;
   font-family: "Ms Madi", cursive;
   transform: translate(-50%, -50%); /* Center the button */
@@ -19,12 +19,12 @@
 
 .home-container h3 {
   position: absolute;
-  top: 84%;
+  top: 79%;
   left: 50%;
   transform: translate(-50%, -50%); /* Center the button */
   font-size: 40px;
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   opacity: 0;
   animation: fadeInH3 1s ease-in-out forwards;
 }
@@ -44,25 +44,25 @@
 .order-button {
   position: absolute;
   z-index: 1;
-  top: 80%;
+  top: 88%;
   left: 50%;
   padding: 10px 20px;
   border: none;
   border-radius: 25px;
-  box-shadow: 0 3px 2px var(--soft-blush-pink, 20);
-  background-color: var(--soft-blush-pink);
+  box-shadow: 0 3px 2px var(--primary-3, 20);
+  background-color: var(--primary-3);
   text-decoration: none;
   letter-spacing: 2px;
   font-weight: 500;
   font-size: 24px;
-  color: var(--charcoal-gray);
+  color: var(--secondary-3);
   cursor: pointer;
   transform: translate(-50%, -50%); /* Center the button */
 }
 
 .order-button:hover {
-  background-color: var(--creamy-white);
-  box-shadow: 0 3px 2px var(--creamy-white, 20);
+  background-color: var(--primary-1);
+  box-shadow: 0 3px 2px var(--primary-1, 20);
 }
 
 @keyframes fadeInH1 {

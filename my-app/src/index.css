@@ -2,18 +2,18 @@
   padding: 0;
   margin: 0;
   /* Primary Colors */
-  --soft-blush-pink: #f8d7da;
-  --champagne-gold: #e0c28e;
-  --creamy-white: #faf8f6;
+  --primary-1: #f8d7da;
+  --primary-2: #e0c28e;
+  --primary-3: #faf8f6;
 
   /* Secondary Colors */
-  --deep-mauve: #8b5a7a;
-  --dusty-rose: #d1a7b7;
-  --charcoal-gray: #4a4a4a;
+  --secondary-1: #8b5a7a;
+  --secondary-2: #d1a7b7;
+  --secondary-3: #4a4a4a;
 
   /* Accent Colors */
-  --rose-gold: #b76e79;
-  --pale-lavender: #e5e1e6;
+  --accent-1: #b76e79;
+  --accent-2: #e5e1e6;
   font-family: "Roboto", sans-serif;
 }
 

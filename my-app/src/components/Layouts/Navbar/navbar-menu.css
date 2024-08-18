@@ -13,9 +13,9 @@
 }
 
 .nav.scrolled {
-  background-color: var(--champagne-gold);
+  background-color: var(--primary-1);
   background-image: none;
-  box-shadow: 0 3px 10px var(--champagne-gold, 20);
+  box-shadow: 0 3px 10px var(--primary-1, 20);
 }
 
 .nav-buttons {
@@ -36,17 +36,17 @@
 }
 
 .nav-li a:hover {
-  color: var(--creamy-white);
+  color: var(--primary-3);
   cursor: pointer;
 }
 
 .nav.scrolled .nav-li a:hover {
-  color: var(--creamy-white);
+  color: var(--primary-3);
 }
 
 .nav-li a {
   text-decoration: none;
-  color: var(--charcoal-gray);
+  color: var(--secondary-3);
 }
 
 .logo-button a {
