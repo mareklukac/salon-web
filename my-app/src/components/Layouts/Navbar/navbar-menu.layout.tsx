@@ -36,7 +36,7 @@ const NavMenu: React.FC = () => {
             <a href="#produkty-section">PRODUKTY</a>
           </li>
           <li className="nav-li">
-            <a href="#cenik-section">CENNÍK</a>
+            <a href="#cennik-section">CENNÍK</a>
           </li>
           <li className="nav-li">
             <a href="#galeria-section">GALÉRIA</a>

@@ -26,41 +26,35 @@ const Form: React.FC = () => {
 
   return (
     <form className="form-container" onSubmit={handleSubmit}>
-      <h3>Kontakt</h3>
+      <h3>Napíšte mi</h3>
       <div className="form-div">
-        <label className="form-label" htmlFor="name">
-          Meno: *
-        </label>
         <input
           className="form-input form-input-name"
           type="text"
           id="name"
           value={name}
+          placeholder="Meno: *"
           onChange={(e) => setName(e.target.value)}
           required
         />
       </div>
       <div className="form-div">
-        <label className="form-label" htmlFor="email">
-          E-mail: *
-        </label>
         <input
           className="form-input form-input-email"
           type="email"
           id="email"
           value={email}
+          placeholder="E-mail: *"
           onChange={(e) => setEmail(e.target.value)}
           required
         />
       </div>
       <div className="form-div">
-        <label className="form-label" htmlFor="message">
-          Správa: *
-        </label>
         <textarea
           className="form-textarea"
           id="message"
           value={message}
+          placeholder="Správa: *"
           onChange={(e) => setMessage(e.target.value)}
           required
         />

@@ -1,0 +1,214 @@
+{
+  "procedury": {
+    "osetreniePleti": [
+      {
+        "name": "Hĺbkové čistenie pleti",
+        "price": "38",
+        "secondPrice": ""
+      },
+      {
+        "name": "Hĺbkové čistenie pleti s masážou",
+        "price": "48",
+        "secondPrice": ""
+      },
+      {
+        "name": "PRIMALUCE ošetrenie chem. peelingom",
+        "price": "55",
+        "secondPrice": ""
+      },
+      {
+        "name": "Hydro-dermabrázia",
+        "price": "52",
+        "secondPrice": ""
+      },
+      {
+        "name": "Liftingové ošetrenie",
+        "price": "55",
+        "secondPrice": ""
+      },
+      {
+        "name": "Ošetrenie REFRESH na mieru",
+        "price": "48",
+        "secondPrice": ""
+      },
+      {
+        "name": "TIMELESS",
+        "price": "48",
+        "secondPrice": ""
+      }
+    ],
+    "exkluzivneOsetrenia": [
+      {
+        "name": "Ošetrenie plné vitamínu C",
+        "price": "70",
+        "secondPrice": ""
+      },
+      {
+        "name": "Luxusné protokolárne ošetrenie: LIFTING CODE",
+        "price": "77",
+        "secondPrice": ""
+      },
+      {
+        "name": "Intenzívne upokojujúce ošetrenie",
+        "price": "48",
+        "secondPrice": ""
+      },
+      {
+        "name": "Rádiofrekvencia tvár/tvár+dekolt",
+        "price": "49",
+        "secondPrice": "53"
+      },
+      {
+        "name": "Rádiofrekvencia tvár/tvár+dekolt s masážou",
+        "price": "55",
+        "secondPrice": "60"
+      },
+      {
+        "name": "Nanohydratácia okysličenie pleti",
+        "price": "47",
+        "secondPrice": "52"
+      },
+      {
+        "name": "Mezoterapia",
+        "price": "49",
+        "secondPrice": ""
+      },
+      {
+        "name": "Fototerapia k ošetreniam",
+        "price": "6",
+        "secondPrice": ""
+      }
+    ],
+    "obocieMihalnice": [
+      {
+        "name": "Formovanie obočia",
+        "price": "6",
+        "secondPrice": ""
+      },
+      {
+        "name": "Farbenie obočia",
+        "price": "6",
+        "secondPrice": ""
+      },
+      {
+        "name": "Kompletná úprava obočia",
+        "price": "12",
+        "secondPrice": ""
+      },
+      {
+        "name": "Laminácia obočia",
+        "price": "30",
+        "secondPrice": ""
+      },
+      {
+        "name": "Farbenie rias",
+        "price": "7",
+        "secondPrice": ""
+      },
+      {
+        "name": "Lash lift",
+        "price": "30",
+        "secondPrice": ""
+      },
+      {
+        "name": "3D mihalnice",
+        "price": "38",
+        "secondPrice": ""
+      },
+      {
+        "name": "Doplnenie mihalníc",
+        "price": "30",
+        "secondPrice": ""
+      },
+      {
+        "name": "Odstránenie mihalníc",
+        "price": "7",
+        "secondPrice": ""
+      }
+    ],
+    "pmu": [
+      {
+        "name": "Nové tetovanie obočia",
+        "price": "150",
+        "secondPrice": ""
+      },
+      {
+        "name": "Korekcia obočia (do 2 mesiacov)",
+        "price": "50",
+        "secondPrice": ""
+      },
+      {
+        "name": "Konzultácia (odrátaná pri tetovaní)",
+        "price": "20",
+        "secondPrice": ""
+      }
+    ],
+    "firoblastPlazmaPen": [
+      {
+        "name": "Horné viečka",
+        "price": "120",
+        "secondPrice": ""
+      },
+      {
+        "name": "Spodné viečka",
+        "price": "120",
+        "secondPrice": ""
+      },
+      {
+        "name": "Viečka spolu (horné + dolné)",
+        "price": "220",
+        "secondPrice": ""
+      },
+      {
+        "name": "Vejarovité vrásky okolo očí",
+        "price": "100",
+        "secondPrice": ""
+      },
+      {
+        "name": "Horné viečka + vrásky okolo očí",
+        "price": "200",
+        "secondPrice": ""
+      },
+      {
+        "name": "Vrásky na čele",
+        "price": "80",
+        "secondPrice": "100"
+      },
+      {
+        "name": "\"Vráska hnevu\"",
+        "price": "70",
+        "secondPrice": ""
+      },
+      {
+        "name": "Vráska nos/pery",
+        "price": "100",
+        "secondPrice": ""
+      },
+      {
+        "name": "Vráska okolo úst",
+        "price": "140",
+        "secondPrice": ""
+      },
+      {
+        "name": "Vrásky nad hornou perou (fajčiarske)",
+        "price": "100",
+        "secondPrice": ""
+      },
+      {
+        "name": "Vrásky na brade",
+        "price": "90",
+        "secondPrice": ""
+      },
+      {
+        "name": "Jazvy, pigmentové škvrny, fibrómy",
+        "price": "50",
+        "secondPrice": ""
+      },
+      {
+        "name": "Konzultácia (odrátaná pri ošetrení)",
+        "price": "20",
+        "secondPrice": ""
+      }
+    ]
+  }
+}

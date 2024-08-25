@@ -3,7 +3,7 @@ import "./App.css";
 import Omne from "./components/Sections/Omne/omne.component";
 import Kontakt from "./components/Sections/Kontakt/kontakt.component";
 import Home from "./components/Sections/Home/home.component";
-import Procedury from "./components/Sections/Procedury/procedury.component";
+import ProcedurySection from "./components/Sections/Procedury/procedury.section";
 import Produkty from "./components/Sections/Produkty/produkty.component";
 import Cennik from "./components/Sections/Cennik/cennik.component";
 import Galeria from "./components/Sections/Galeria/galeria.component";
@@ -21,7 +21,7 @@ function App() {
           <Omne />
         </section>
         <section id="procedury-section" className="page-section">
-          <Procedury />
+          <ProcedurySection />
         </section>
         <section id="produkty-section" className="page-section">
           <Produkty />

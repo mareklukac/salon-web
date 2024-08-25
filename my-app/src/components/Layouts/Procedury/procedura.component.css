@@ -1,0 +1,9 @@
+.procedura-component {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 0.1em;
+}
+
+.procedura-component p span {
+  font-weight: 500;
+}

@@ -14,32 +14,7 @@ const Kontakt: React.FC = () => {
     <div className="contact-container">
       <div className="contact-inner-container">
         <div className="contact-adress">
-          <div className="contact-adress-information">
-            <FontAwesomeIcon
-              className="contact-social-sites-icon"
-              icon={faPhone}
-            />
-            <a className="contact-link" href="tel:+421904545542">
-              +421 904 545 542
-            </a>
-          </div>
-          <div className="contact-adress-information">
-            <FontAwesomeIcon
-              className="contact-social-sites-icon"
-              icon={faAt}
-            />
-            <p>maja.lukacovaa@gmail.com</p>
-          </div>
-          <div className="contact-adress-information">
-            <FontAwesomeIcon
-              className="contact-social-sites-icon"
-              icon={faLocationDot}
-            />
-            <p>Južná trieda 2/A 04001 Košice, Slovensko</p>
-          </div>
-          <div className="contact-map">
-            <GoogleMapsComponent />
-          </div>
+          <h3 className="contact-header">Nájdete ma na:</h3>
           <div className="contact-social-sites">
             <a
               href="https://www.facebook.com/mayabeautykosice"
@@ -63,6 +38,27 @@ const Kontakt: React.FC = () => {
                 icon={faInstagram}
               />
             </a>
+          </div>
+          <h3 className="contact-header">Kontaktné informácie:</h3>
+          <div className="contact-adress-information">
+            <FontAwesomeIcon className="contact-adress-icon" icon={faPhone} />
+            <a className="contact-link" href="tel:+421904545542">
+              +421 904 545 542
+            </a>
+          </div>
+          <div className="contact-adress-information">
+            <FontAwesomeIcon className="contact-adress-icon" icon={faAt} />
+            <p>maja.lukacovaa@gmail.com</p>
+          </div>
+          <div className="contact-adress-information">
+            <FontAwesomeIcon
+              className="contact-adress-icon"
+              icon={faLocationDot}
+            />
+            <p>Južná trieda 2/A 04001 Košice, Slovensko</p>
+          </div>
+          <div className="contact-map">
+            <GoogleMapsComponent />
           </div>
         </div>
       </div>

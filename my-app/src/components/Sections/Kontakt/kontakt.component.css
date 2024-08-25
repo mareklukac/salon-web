@@ -20,6 +20,12 @@
   flex-direction: column;
 }
 
+.contact-header {
+  margin-bottom: 1em;
+  font-weight: 500;
+  font-size: 25px;
+}
+
 .contact-adress-information {
   display: flex;
   justify-content: flex-start;
@@ -39,15 +45,22 @@
 
 .contact-social-sites {
   font-size: 50px;
-  margin-top: 1em;
+  margin-bottom: 0.5em;
 }
 
-.contact-social-sites-icon {
-  margin-right: 1em;
+.contact-adress-icon, .contact-social-sites-icon {
   color: var(--accent-3);
   transition: color 0.3s;
   text-decoration: none;
   transition: transform 0.3s;
+}
+
+.contact-social-sites-icon {
+  margin-right: 0.5em;
+}
+
+.contact-adress-icon {
+  margin-right: 1em;
 }
 
 .contact-link:hover .contact-social-sites-icon {
