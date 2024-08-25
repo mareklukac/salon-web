@@ -10,7 +10,7 @@ const Omne: React.FC = () => {
       <Divider />
       <div className="omne-inner-container">
         <div className="omne-inner-section">
-          <img className="omne-photo" src={omnePhoto}></img>
+          <img className="omne-photo" src={omnePhoto} alt="profile"></img>
         </div>
         <div className="omne-inner-section omne-inner-paragraph-section">
           <h3>MÁRIA LUKÁČOVÁ</h3>
