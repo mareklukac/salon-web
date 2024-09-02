@@ -61,6 +61,66 @@ const ProceduryListComponent: React.FC = () => {
             />
           ))}
         </div>
+        <div className="procedury-section">
+          <h3>PMU: Púdrové tetovanie obočia</h3>
+          {proceduryList.pmu.map((item: IProcedura) => (
+            <ProceduraComponent
+              name={item.name}
+              price={item.price}
+              secondPrice={item.secondPrice}
+            />
+          ))}
+        </div>
+        <div className="procedury-section">
+          <h3>PMU: Púdrové tetovanie obočia</h3>
+          {proceduryList.pmu.map((item: IProcedura) => (
+            <ProceduraComponent
+              name={item.name}
+              price={item.price}
+              secondPrice={item.secondPrice}
+            />
+          ))}
+        </div>
+        <div className="procedury-section">
+          <h3>PMU: Púdrové tetovanie obočia</h3>
+          {proceduryList.pmu.map((item: IProcedura) => (
+            <ProceduraComponent
+              name={item.name}
+              price={item.price}
+              secondPrice={item.secondPrice}
+            />
+          ))}
+        </div>
+        <div className="procedury-section">
+          <h3>PMU: Púdrové tetovanie obočia</h3>
+          {proceduryList.pmu.map((item: IProcedura) => (
+            <ProceduraComponent
+              name={item.name}
+              price={item.price}
+              secondPrice={item.secondPrice}
+            />
+          ))}
+        </div>
+        <div className="procedury-section">
+          <h3>PMU: Púdrové tetovanie obočia</h3>
+          {proceduryList.pmu.map((item: IProcedura) => (
+            <ProceduraComponent
+              name={item.name}
+              price={item.price}
+              secondPrice={item.secondPrice}
+            />
+          ))}
+        </div>
+        <div className="procedury-section">
+          <h3>PMU: Púdrové tetovanie obočia</h3>
+          {proceduryList.pmu.map((item: IProcedura) => (
+            <ProceduraComponent
+              name={item.name}
+              price={item.price}
+              secondPrice={item.secondPrice}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

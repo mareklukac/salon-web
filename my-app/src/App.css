@@ -17,10 +17,11 @@ html {
 
 .page-section {
   padding: 100px 20px;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   padding: 0;
 }
 
-.page-section:nth-child(2n) {
+.page-section:nth-child(even) {
   background-color: var(--primary-1);
 }

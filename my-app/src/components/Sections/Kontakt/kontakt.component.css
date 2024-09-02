@@ -2,8 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  max-height: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 .contact-inner-container {
@@ -48,7 +47,8 @@
   margin-bottom: 0.5em;
 }
 
-.contact-adress-icon, .contact-social-sites-icon {
+.contact-adress-icon,
+.contact-social-sites-icon {
   color: var(--accent-3);
   transition: color 0.3s;
   text-decoration: none;

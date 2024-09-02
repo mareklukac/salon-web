@@ -16,6 +16,7 @@
   opacity: 0;
   animation: fadeInH1 1s ease-in-out forwards;
   color: #e55e0c;
+  z-index: 2;
 }
 
 .home-container h3 {
@@ -27,6 +28,7 @@
   font-weight: 400;
   opacity: 0;
   animation: fadeInH3 1s ease-in-out forwards;
+  z-index: 2;
 }
 
 .background-image {
@@ -38,12 +40,12 @@
   height: 100%;
   object-fit: cover;
   overflow: hidden;
-  z-index: -1;
+  z-index: 1;
 }
 
 .order-button {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   top: 85%;
   left: 50%;
   padding: 10px 30px;
