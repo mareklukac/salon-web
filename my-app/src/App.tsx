@@ -1,42 +1,15 @@
 import React from "react";
 import "./App.css";
-import Omne from "./components/Sections/Omne/omne.component";
-import Kontakt from "./components/Sections/Kontakt/kontakt.component";
-import Home from "./components/Sections/Home/home.component";
-import ProcedurySection from "./components/Sections/Procedury/procedury.section";
-import Produkty from "./components/Sections/Produkty/produkty.component";
-import Cennik from "./components/Sections/Cennik/cennik.component";
-import Galeria from "./components/Sections/Galeria/galeria.component";
-import NavMenu from "./components/Layouts/Navbar/navbar-menu.layout";
+import LandingPage from "./components/Sections/landingPage";
+import { Route, Routes } from "react-router-dom";
+import ProceduryPage from "./components/ProceduryPage/proceduryPage";
 
 function App() {
   return (
-    <>
-      <NavMenu />
-      <main>
-        <section id="home-section" className="page-section">
-          <Home />
-        </section>
-        <section id="omne-section" className="page-section">
-          <Omne />
-        </section>
-        <section id="procedury-section" className="page-section">
-          <ProcedurySection />
-        </section>
-        <section id="produkty-section" className="page-section">
-          <Produkty />
-        </section>
-        <section id="cennik-section" className="page-section">
-          <Cennik />
-        </section>
-        <section id="galeria-section" className="page-section">
-          <Galeria />
-        </section>
-        <section id="kontakt-section" className="page-section">
-          <Kontakt />
-        </section>
-      </main>
-    </>
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/proceduryPage" element={<ProceduryPage />} />
+    </Routes>
   );
 }
 
