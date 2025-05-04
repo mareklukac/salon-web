@@ -1,24 +1,37 @@
 import React, { useState } from "react";
+import emailjs from "emailjs-com";
 
 import "./form.component.css";
 
+const SERVICE_ID = "service_mareklukac08";
+const TEMPLATE_ID = "template_testsetup";
+const PUBLIC_KEY = "VdETkktU9QKLeBXNu";
+
 const Form: React.FC = () => {
-  // State variables to hold form input values
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  // Function to handle form submission
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault(); // Prevent the default form submission behavior
+    event.preventDefault();
 
-    // Log form data to the console (you can replace this with actual form submission logic)
-    console.log("Form submitted with data:");
-    console.log("Name:", name);
-    console.log("Email:", email);
-    console.log("Message:", message);
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      message,
+    };
 
-    // Reset form fields after submission
+    emailjs
+      .send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY)
+      .then((response) => {
+        console.log("Správa úspešne odoslaná!", response.text);
+        alert("Message sent!");
+      })
+      .catch((error) => {
+        console.error("Email send error:", error);
+        alert("Niečo sa pokazilo! Vyskúšajte to neskôr.");
+      });
+
     setName("");
     setEmail("");
     setMessage("");
