@@ -13,7 +13,8 @@
   flex-direction: column;
   gap: 2rem;
   padding: 2rem;
-  width: 100%;
+  margin: 2rem;
+  max-width: 100%;
 }
 
 .produkt {
@@ -28,9 +29,11 @@
   flex-direction: row-reverse;
 }
 
-.product-text {
+.produkt-text {
   flex: 1;
-  font-size: 1.2rem;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
 }
 
 .produkt-image {

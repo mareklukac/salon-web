@@ -11,57 +11,57 @@ import placeholder from "../../../assets/placeholder.png";
 const produkty = [
   {
     id: 1,
-    text: `SOME TEXT`,
+    text: `Bear claw donut tootsie roll muffin sesame snaps toffee jujubes. Pastry oat cake gummi bears lollipop tiramisu brownie gingerbread jujubes I love. Gummi bears I love biscuit cake I love jujubes lemon drops gummi bears sweet roll. Cheesecake marzipan marzipan cotton candy halvah. Lemon drops icing dessert jelly-o pie tiramisu toffee dessert muffin. Tiramisu gummies sesame snaps dessert dragée macaroon brownie dragée sugar plum.`,
     image: placeholder,
   },
   {
     id: 2,
-    text: `SOME TEXT`,
+    text: `Bear claw donut tootsie roll muffin sesame snaps toffee jujubes. Pastry oat cake gummi bears lollipop tiramisu brownie gingerbread jujubes I love. Gummi bears I love biscuit cake I love jujubes lemon drops gummi bears sweet roll. Cheesecake marzipan marzipan cotton candy halvah. Lemon drops icing dessert jelly-o pie tiramisu toffee dessert muffin. Tiramisu gummies sesame snaps dessert dragée macaroon brownie dragée sugar plum.`,
     image: placeholder,
   },
   {
     id: 3,
-    text: `SOME TEXT`,
+    text: `Bear claw donut tootsie roll muffin sesame snaps toffee jujubes. Pastry oat cake gummi bears lollipop tiramisu brownie gingerbread jujubes I love. Gummi bears I love biscuit cake I love jujubes lemon drops gummi bears sweet roll. Cheesecake marzipan marzipan cotton candy halvah. Lemon drops icing dessert jelly-o pie tiramisu toffee dessert muffin. Tiramisu gummies sesame snaps dessert dragée macaroon brownie dragée sugar plum.`,
     image: placeholder,
   },
   {
     id: 4,
-    text: `SOME TEXT`,
+    text: `Bear claw donut tootsie roll muffin sesame snaps toffee jujubes. Pastry oat cake gummi bears lollipop tiramisu brownie gingerbread jujubes I love. Gummi bears I love biscuit cake I love jujubes lemon drops gummi bears sweet roll. Cheesecake marzipan marzipan cotton candy halvah. Lemon drops icing dessert jelly-o pie tiramisu toffee dessert muffin. Tiramisu gummies sesame snaps dessert dragée macaroon brownie dragée sugar plum.`,
     image: placeholder,
   },
   {
     id: 5,
-    text: `SOME TEXT`,
+    text: `Bear claw donut tootsie roll muffin sesame snaps toffee jujubes. Pastry oat cake gummi bears lollipop tiramisu brownie gingerbread jujubes I love. Gummi bears I love biscuit cake I love jujubes lemon drops gummi bears sweet roll. Cheesecake marzipan marzipan cotton candy halvah. Lemon drops icing dessert jelly-o pie tiramisu toffee dessert muffin. Tiramisu gummies sesame snaps dessert dragée macaroon brownie dragée sugar plum.`,
     image: placeholder,
   },
   {
     id: 6,
-    text: `SOME TEXT`,
+    text: `Bear claw donut tootsie roll muffin sesame snaps toffee jujubes. Pastry oat cake gummi bears lollipop tiramisu brownie gingerbread jujubes I love. Gummi bears I love biscuit cake I love jujubes lemon drops gummi bears sweet roll. Cheesecake marzipan marzipan cotton candy halvah. Lemon drops icing dessert jelly-o pie tiramisu toffee dessert muffin. Tiramisu gummies sesame snaps dessert dragée macaroon brownie dragée sugar plum.`,
     image: placeholder,
   },
   {
     id: 7,
-    text: `SOME TEXT`,
+    text: `Bear claw donut tootsie roll muffin sesame snaps toffee jujubes. Pastry oat cake gummi bears lollipop tiramisu brownie gingerbread jujubes I love. Gummi bears I love biscuit cake I love jujubes lemon drops gummi bears sweet roll. Cheesecake marzipan marzipan cotton candy halvah. Lemon drops icing dessert jelly-o pie tiramisu toffee dessert muffin. Tiramisu gummies sesame snaps dessert dragée macaroon brownie dragée sugar plum.`,
     image: placeholder,
   },
   {
     id: 8,
-    text: `SOME TEXT`,
+    text: `Bear claw donut tootsie roll muffin sesame snaps toffee jujubes. Pastry oat cake gummi bears lollipop tiramisu brownie gingerbread jujubes I love. Gummi bears I love biscuit cake I love jujubes lemon drops gummi bears sweet roll. Cheesecake marzipan marzipan cotton candy halvah. Lemon drops icing dessert jelly-o pie tiramisu toffee dessert muffin. Tiramisu gummies sesame snaps dessert dragée macaroon brownie dragée sugar plum.`,
     image: placeholder,
   },
   {
     id: 9,
-    text: `SOME TEXT`,
+    text: `Bear claw donut tootsie roll muffin sesame snaps toffee jujubes. Pastry oat cake gummi bears lollipop tiramisu brownie gingerbread jujubes I love. Gummi bears I love biscuit cake I love jujubes lemon drops gummi bears sweet roll. Cheesecake marzipan marzipan cotton candy halvah. Lemon drops icing dessert jelly-o pie tiramisu toffee dessert muffin. Tiramisu gummies sesame snaps dessert dragée macaroon brownie dragée sugar plum.`,
     image: placeholder,
   },
   {
     id: 10,
-    text: `SOME TEXT`,
+    text: `Bear claw donut tootsie roll muffin sesame snaps toffee jujubes. Pastry oat cake gummi bears lollipop tiramisu brownie gingerbread jujubes I love. Gummi bears I love biscuit cake I love jujubes lemon drops gummi bears sweet roll. Cheesecake marzipan marzipan cotton candy halvah. Lemon drops icing dessert jelly-o pie tiramisu toffee dessert muffin. Tiramisu gummies sesame snaps dessert dragée macaroon brownie dragée sugar plum.`,
     image: placeholder,
   },
   {
     id: 11,
-    text: `SOME TEXT`,
+    text: `Bear claw donut tootsie roll muffin sesame snaps toffee jujubes. Pastry oat cake gummi bears lollipop tiramisu brownie gingerbread jujubes I love. Gummi bears I love biscuit cake I love jujubes lemon drops gummi bears sweet roll. Cheesecake marzipan marzipan cotton candy halvah. Lemon drops icing dessert jelly-o pie tiramisu toffee dessert muffin. Tiramisu gummies sesame snaps dessert dragée macaroon brownie dragée sugar plum.`,
     image: placeholder,
   },
 ];
