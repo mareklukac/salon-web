@@ -1,17 +1,25 @@
 .contact-container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  height: 100vh;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 2rem;
+  min-height: 100vh;
 }
 
 .contact-inner-container {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
-  max-height: 100%;
-  width: 40%;
-  height: inherit;
+  width: 100%;
+  max-width: 600px;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.contact-adress-information,
+.contact-header,
+.contact-social-sites {
+  text-align: left;
+  word-break: break-word;
 }
 
 .contact-adress {
@@ -66,4 +74,16 @@
 .contact-link:hover .contact-social-sites-icon {
   color: inherit;
   transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+  .contact-container {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+
+  .contact-inner-container {
+    width: 40%;
+  }
 }

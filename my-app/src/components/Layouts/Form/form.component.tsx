@@ -24,8 +24,8 @@ const Form: React.FC = () => {
     emailjs
       .send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY)
       .then((response) => {
-        console.log("Správa úspešne odoslaná!", response.text);
-        alert("Message sent!");
+        console.log("Email send response:", response.text);
+        alert("Správa úspešne odoslaná!");
       })
       .catch((error) => {
         console.error("Email send error:", error);
