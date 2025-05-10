@@ -1,28 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import "./navbar-menu.layout.css";
 import logo from "../../../assets/logo_png.png";
-import { useLocation, useNavigate } from "react-router-dom";
 
 const NavMenu: React.FC = () => {
-  const navigate = useNavigate();
-  const location = useLocation();
-
-  const handleScrollNavigation = (sectionId: string) => {
-    if (location.pathname !== "/") {
-      navigate("/");
-      setTimeout(() => {
-        const section = document.getElementById(sectionId);
-        if (section) {
-          section.scrollIntoView({ behavior: "smooth" });
-        }
-      }, 300);
-    } else {
-      const section = document.getElementById(sectionId);
-      if (section) {
-        section.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  };
 
   const navRef = useRef<HTMLElement | null>(null);
 
@@ -48,52 +28,22 @@ const NavMenu: React.FC = () => {
       <div className="nav-buttons">
         <ul className="nav-ul">
           <li className="nav-li">
-            <button
-              className="nav-link-button"
-              onClick={() => handleScrollNavigation("omne-section")}
-            >
-              O MNE
-            </button>
+            <a href="#omne-section">O MNE</a>
           </li>
           <li className="nav-li">
-            <button
-              className="nav-link-button"
-              onClick={() => handleScrollNavigation("procedury-section")}
-            >
-              PROCEDURY
-            </button>
+            <a href="#procedury-section">PROCEDURY</a>
           </li>
           <li className="nav-li">
-            <button
-              className="nav-link-button"
-              onClick={() => handleScrollNavigation("produkty-section")}
-            >
-              PRODUKTY
-            </button>
+            <a href="#produkty-section">PRODUKTY</a>
           </li>
           <li className="nav-li">
-            <button
-              className="nav-link-button"
-              onClick={() => handleScrollNavigation("cennik-section")}
-            >
-              CENNÍK
-            </button>
+            <a href="#cennik-section">CENNÍK</a>
           </li>
           <li className="nav-li">
-            <button
-              className="nav-link-button"
-              onClick={() => handleScrollNavigation("galeria-section")}
-            >
-              GALÉRIA
-            </button>
+            <a href="#galeria-section">GALÉRIA</a>
           </li>
           <li className="nav-li">
-            <button
-              className="nav-link-button"
-              onClick={() => handleScrollNavigation("kontakt-section")}
-            >
-              KONTAKT
-            </button>
+            <a href="#kontakt-section">KONTAKT</a>
           </li>
         </ul>
       </div>
