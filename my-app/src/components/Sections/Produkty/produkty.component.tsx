@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Divider from "../../Layouts/Divider/divider.layout";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -70,6 +70,7 @@ const Produkty: React.FC = () => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [maxVisible, setMaxVisible] = useState(0);
   const itemHeight = 450;
+  const sectionRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const handleResize = () => {
@@ -82,6 +83,23 @@ const Produkty: React.FC = () => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  const handleToggle = () => {
+    if (isExpanded && sectionRef.current) {
+      const offset = 60; // Adjust this to match your fixed navbar height
+      const top =
+        sectionRef.current.getBoundingClientRect().top +
+        window.scrollY -
+        offset;
+
+      window.scrollTo({
+        top,
+        behavior: "smooth",
+      });
+    }
+
+    setIsExpanded(!isExpanded);
+  };
 
   const visibleProducts = isExpanded ? produkty : produkty.slice(0, maxVisible);
 
@@ -103,10 +121,7 @@ const Produkty: React.FC = () => {
       </div>
 
       {produkty.length > maxVisible && (
-        <button
-          className="toggle-button"
-          onClick={() => setIsExpanded(!isExpanded)}
-        >
+        <button className="toggle-button" onClick={handleToggle}>
           <FontAwesomeIcon
             icon={isExpanded ? faCircleChevronUp : faCircleChevronDown}
             size="3x"

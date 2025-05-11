@@ -1,22 +1,30 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./navbar-menu.layout.css";
 import logo from "../../../assets/logo_png.png";
 
 const NavMenu: React.FC = () => {
-
   const navRef = useRef<HTMLElement | null>(null);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    if (navRef.current) {
-      window.addEventListener("scroll", () => {
+    const handleScroll = () => {
+      if (navRef.current) {
         if (window.scrollY > 50) {
-          navRef.current?.classList.add("scrolled");
-        } else if (window.scrollY < 50) {
-          navRef.current?.classList.remove("scrolled");
+          navRef.current.classList.add("scrolled");
+        } else {
+          navRef.current.classList.remove("scrolled");
         }
-      });
-    }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
+
+  const handleLinkClick = () => setMenuOpen(false);
 
   return (
     <nav className="nav" ref={navRef}>
@@ -25,26 +33,29 @@ const NavMenu: React.FC = () => {
           <img alt="logo" src={logo}></img>
         </a>
       </div>
-      <div className="nav-buttons">
+
+      <div className="burger" onClick={() => setMenuOpen(!menuOpen)}>
+        <span className={`bar ${menuOpen ? "open" : ""}`}></span>
+        <span className={`bar ${menuOpen ? "open" : ""}`}></span>
+        <span className={`bar ${menuOpen ? "open" : ""}`}></span>
+      </div>
+
+      <div className={`nav-buttons ${menuOpen ? "open" : ""}`}>
         <ul className="nav-ul">
-          <li className="nav-li">
-            <a href="#omne-section">O MNE</a>
-          </li>
-          <li className="nav-li">
-            <a href="#procedury-section">PROCEDURY</a>
-          </li>
-          <li className="nav-li">
-            <a href="#produkty-section">PRODUKTY</a>
-          </li>
-          <li className="nav-li">
-            <a href="#cennik-section">CENNÍK</a>
-          </li>
-          <li className="nav-li">
-            <a href="#galeria-section">GALÉRIA</a>
-          </li>
-          <li className="nav-li">
-            <a href="#kontakt-section">KONTAKT</a>
-          </li>
+          {[
+            { label: "O MNE", href: "#omne-section" },
+            { label: "PROCEDURY", href: "#procedury-section" },
+            { label: "PRODUKTY", href: "#produkty-section" },
+            { label: "CENNÍK", href: "#cennik-section" },
+            { label: "GALÉRIA", href: "#galeria-section" },
+            { label: "KONTAKT", href: "#kontakt-section" },
+          ].map(({ label, href }) => (
+            <li className="nav-li" key={label}>
+              <a href={href} onClick={handleLinkClick}>
+                {label}
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
     </nav>
