@@ -139,3 +139,7 @@
   cursor: pointer;
   z-index: 12;
 }
+
+.responsive-icon {
+  font-size: clamp(24px, 5vw, 30px);
+}

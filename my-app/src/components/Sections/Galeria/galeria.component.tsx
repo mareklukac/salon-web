@@ -58,7 +58,7 @@ const Galeria: React.FC = () => {
       <Divider />
       <div className="slider-container">
         <button className="arrow left" onClick={prevSlide}>
-          <FontAwesomeIcon icon={faCircleChevronLeft} />
+          <FontAwesomeIcon icon={faCircleChevronLeft} className="responsive-icon" />
         </button>
         <div className="slider">
           {[-2, -1, 0, 1, 2].map((offset) => {
@@ -81,7 +81,7 @@ const Galeria: React.FC = () => {
           })}
         </div>
         <button className="arrow right" onClick={nextSlide}>
-          <FontAwesomeIcon icon={faCircleChevronRight} />
+          <FontAwesomeIcon icon={faCircleChevronRight} className="responsive-icon" />
         </button>
 
         {modalImage && (
