@@ -23,7 +23,7 @@ const Kontakt: React.FC = () => {
               className="contact-link"
             >
               <FontAwesomeIcon
-                className="contact-social-sites-icon"
+                className="contact-social-sites-icon facebook"
                 icon={faFacebook}
               />
             </a>
@@ -34,7 +34,7 @@ const Kontakt: React.FC = () => {
               className="contact-link"
             >
               <FontAwesomeIcon
-                className="contact-social-sites-icon"
+                className="contact-social-sites-icon instagram"
                 icon={faInstagram}
               />
             </a>
@@ -55,7 +55,10 @@ const Kontakt: React.FC = () => {
               className="contact-adress-icon"
               icon={faLocationDot}
             />
-            <p>Južná trieda 2/A 04001 Košice, Slovensko</p>
+            <p>
+              Moldavská cesta 1360/21, 040 11 Košice (budova "Varta" medzi
+              Lidlom a Freshom)
+            </p>
           </div>
           <div className="contact-map">
             <GoogleMapsComponent />

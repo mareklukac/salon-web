@@ -72,8 +72,15 @@
 }
 
 .contact-link:hover .contact-social-sites-icon {
-  color: inherit;
   transform: scale(1.1);
+}
+
+.contact-link:hover .facebook {
+  color: inherit;
+}
+
+.contact-link:hover .instagram {
+  color: #dd2a7b;
 }
 
 @media (min-width: 768px) {
