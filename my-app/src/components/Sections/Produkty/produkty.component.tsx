@@ -18,14 +18,14 @@ const produkty: Produkt[] = [
   {
     id: 1,
     title: `Bioline Jatò`,
-    text: `V našom salóne s hrdosťou pracujeme s kozmetikou Bioline Jatò, uznávanou talianskou značkou s viac než 40-ročnou tradíciou v oblasti profesionálnej starostlivosti o pleť. Ich produkty kombinujú prírodné zložky, vedecký výskum a inovatívne technológie, vďaka čomu poskytujú viditeľné a dlhodobé výsledky. Bioline Jatò ponúka riešenia pre všetky typy pleti - od hydratácie, cez anti-aging až po citlivú a problematickú pokožku. Ošetrenia sú navrhnuté tak, aby rešpektovali prirodzené funkcie pokožky a zároveň podporovali jej regeneráciu, rovnováhu a vitalitu. Doprajte si exkluzívnu starostlivosť so značkou, ktorá spája prírodu a vedu pre dokonalý zážitok krásy.`,
+    text: `V salóne s hrdosťou pracujeme s kozmetikou Bioline Jatò, uznávanou talianskou značkou s viac než 40-ročnou tradíciou v oblasti profesionálnej starostlivosti o pleť. Ich produkty kombinujú prírodné zložky, vedecký výskum a inovatívne technológie, vďaka čomu poskytujú viditeľné a dlhodobé výsledky. Bioline Jatò ponúka riešenia pre všetky typy pleti - od hydratácie, cez anti-aging až po citlivú a problematickú pokožku. Ošetrenia sú navrhnuté tak, aby rešpektovali prirodzené funkcie pokožky a zároveň podporovali jej regeneráciu, rovnováhu a vitalitu. Doprajte si exkluzívnu starostlivosť so značkou, ktorá spája prírodu a vedu pre dokonalý zážitok krásy.`,
     image: biolineLogo,
     link: "https://biolinejato.cz/",
   },
   {
     id: 2,
     title: `Alissa Beauté`,
-    text: `V našom salóne používame kozmetiku Alissa Beauté, renomovanú značku, ktorá spája prírodné extrakty, modernú technológiu a dermokozmetický prístup k starostlivosti o pleť. Produkty tejto talianskej značky sú bez parabénov, minerálnych olejov a geneticky modifikovaných látok - ideálna voľba pre klientky, ktoré hľadajú účinné a zároveň šetrné riešenia. Alissa Beauté ponúka široké portfólio produktov pre rôzne typy a potreby pleti - od hydratácie, výživy až po boj proti vráskam či pigmentovým škvrnám. Každé ošetrenie je zamerané na individualizovaný prístup a dlhodobé výsledky. Objavte silu prírody v kombinácii s kozmetickým know-how vďaka starostlivosti Alissa Beauté - pre zdravú, žiarivú a sviežu pleť.`,
+    text: `V salóne používame kozmetiku Alissa Beauté, renomovanú značku, ktorá spája prírodné extrakty, modernú technológiu a dermokozmetický prístup k starostlivosti o pleť. Produkty tejto talianskej značky sú bez parabénov, minerálnych olejov a geneticky modifikovaných látok - ideálna voľba pre klientky, ktoré hľadajú účinné a zároveň šetrné riešenia. Alissa Beauté ponúka široké portfólio produktov pre rôzne typy a potreby pleti - od hydratácie, výživy až po boj proti vráskam či pigmentovým škvrnám. Každé ošetrenie je zamerané na individualizovaný prístup a dlhodobé výsledky. Objavte silu prírody v kombinácii s kozmetickým know-how vďaka starostlivosti Alissa Beauté - pre zdravú, žiarivú a sviežu pleť.`,
     image: allisaLogo,
     link: "https://www.alissabeaute.com/cs/",
   },

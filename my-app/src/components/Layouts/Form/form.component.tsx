@@ -41,36 +41,42 @@ const Form: React.FC = () => {
     <form className="form-container" onSubmit={handleSubmit}>
       <h3>Napíšte mi</h3>
       <div className="form-div">
-        <input
-          className="form-input form-input-name"
-          type="text"
-          id="name"
-          value={name}
-          placeholder="Meno: *"
-          onChange={(e) => setName(e.target.value)}
-          required
-        />
+        <div className="input-group">
+          <label htmlFor="name">Meno a priezvisko: *</label>
+          <input
+            className="form-input form-input-name"
+            type="text"
+            id="name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+          />
+        </div>
       </div>
       <div className="form-div">
-        <input
-          className="form-input form-input-email"
-          type="email"
-          id="email"
-          value={email}
-          placeholder="E-mail: *"
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
+        <div className="input-group">
+          <label htmlFor="email">E-mail: *</label>
+          <input
+            className="form-input form-input-email"
+            type="email"
+            id="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+        </div>
       </div>
       <div className="form-div">
-        <textarea
-          className="form-textarea"
-          id="message"
-          value={message}
-          placeholder="Správa: *"
-          onChange={(e) => setMessage(e.target.value)}
-          required
-        />
+        <div className="input-group">
+          <label htmlFor="message">Správa: *</label>
+          <textarea
+            className="form-textarea"
+            id="message"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            required
+          />
+        </div>
       </div>
       <button className="form-button" type="submit">
         ODOSLAŤ
