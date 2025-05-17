@@ -1,6 +1,8 @@
 import Divider from "../../Layouts/Divider/divider.layout";
 import "./omne.component.css";
 
+import { motion } from "framer-motion";
+
 import omnePhoto from "../../../assets/omne_photo2.jpg";
 
 const Omne: React.FC = () => {
@@ -10,9 +12,23 @@ const Omne: React.FC = () => {
       <Divider />
       <div className="omne-inner-container">
         <div className="omne-inner-section">
-          <img className="omne-photo" src={omnePhoto} alt="profile"></img>
+          <motion.img
+            className="omne-photo"
+            src={omnePhoto}
+            alt="profile"
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.4 }}
+          />
         </div>
-        <div className="omne-inner-section omne-inner-paragraph-section">
+        <motion.div
+          className="omne-inner-section omne-inner-paragraph-section"
+          initial={{ opacity: 0, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 1, duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: false, amount: 0.3 }}
+        >
           <h3>MÁRIA LUKÁČOVÁ</h3>
           <p>
             Milujem svoju prácu, vďaka ktorej viem dodať ženám sebavedomie,
@@ -31,7 +47,7 @@ const Omne: React.FC = () => {
             reakciami, spokojnosťou a úsmevom, ktorý po ošetreniach vidím na
             vašich tvárach.
           </p>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

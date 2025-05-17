@@ -60,10 +60,11 @@
   padding: 2rem;
   margin: 0;
   transition: background-color 0.3s ease;
+  color: var(--accent-3);
 }
 
 .toggle-button:hover {
-  color: white;
+  color: var(--accent-1);
 }
 
 /* Mobile & small tablet: Stack vertically */

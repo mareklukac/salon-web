@@ -33,10 +33,7 @@
   align-self: center;
   font-weight: 500;
   font-size: 30px;
-}
-
-.omne-inner-container p {
-  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .omne-inner-paragraph-section {
@@ -48,8 +45,6 @@
 }
 
 .omne-photo {
-  /* max-width: 100%;
-  object-fit: cover; */
   width: 100%;
   height: auto;
   object-fit: cover;
