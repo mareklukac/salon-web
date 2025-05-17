@@ -52,12 +52,12 @@ form h3 {
   align-self: center;
   padding: 10px 30px;
   border: none;
-  border-radius: 25px;
-  box-shadow: 0 1px 15px var(--accent-3, 20);
+  border-radius: 5px;
+  box-shadow: 0 1px 8px var(--accent-3, 20);
   background-color: var(--primary-3);
   text-decoration: none;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
   color: var(--secondary-3);
   cursor: pointer;
   letter-spacing: 1px;

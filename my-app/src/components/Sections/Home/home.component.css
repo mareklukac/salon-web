@@ -17,7 +17,6 @@
   color: #e55e0c;
   z-index: 2;
   text-align: center;
-
   top: 65%;
 }
 
@@ -54,8 +53,8 @@
   left: 50%;
   padding: 10px 30px;
   border: none;
-  border-radius: 25px;
-  box-shadow: 0 1px 15px var(--accent-3, 20);
+  border-radius: 5px;
+  box-shadow: 0 1px 8px var(--accent-3, 20);
   background-color: var(--primary-3);
   text-decoration: none;
   font-weight: 500;

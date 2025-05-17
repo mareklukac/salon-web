@@ -73,7 +73,7 @@ const Form: React.FC = () => {
         />
       </div>
       <button className="form-button" type="submit">
-        Odoslať
+        ODOSLAŤ
       </button>
     </form>
   );
