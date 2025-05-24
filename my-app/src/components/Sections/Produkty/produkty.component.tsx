@@ -55,10 +55,10 @@ const Produkty: React.FC = () => {
                   className="produkt-text-block"
                   initial={{ opacity: 0, y: 0 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 1, duration: 0.6, ease: "easeOut" }}
-                  viewport={{ once: false, amount: 0.3 }}
+                  transition={{ duration: 0.6, ease: "easeOut" }}
+                  viewport={{ once: false, amount: 0.4 }}
                 >
-                  <span className="produkt-title">{produkt.title}</span>
+                  <h3 className="produkt-title">{produkt.title}</h3>
                   <div className="produkt-text">{produkt.text}</div>
                 </motion.div>
                 <a href={produkt.link}>
@@ -66,7 +66,10 @@ const Produkty: React.FC = () => {
                     src={produkt.image}
                     alt={produkt.title}
                     className="produkt-image"
-                    initial={{ x: isEven ? -100 : 100, opacity: 0 }}
+                    initial={{
+                      x: isEven ? [0, -100, 0] : [0, 100, 0],
+                      opacity: 0,
+                    }}
                     whileInView={{ x: 0, opacity: 1 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                     viewport={{ once: false, amount: 0.4 }}

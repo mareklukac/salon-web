@@ -162,8 +162,29 @@ const Galeria: React.FC = () => {
                 <FontAwesomeIcon icon={faCircleChevronRight} />
               </button>
             </div>
+            <div className="indicators">
+              {images.map((_, index) => (
+                <span
+                  key={index}
+                  className={`indicator-dot ${
+                    index === currentIndex ? "active" : ""
+                  }`}
+                ></span>
+              ))}
+            </div>
           </div>
         )}
+
+        <div className="indicators">
+          {images.map((_, index) => (
+            <span
+              key={index}
+              className={`indicator-dot ${
+                index === currentIndex ? "active" : ""
+              }`}
+            ></span>
+          ))}
+        </div>
       </div>
     </div>
   );

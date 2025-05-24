@@ -5,6 +5,10 @@
   src: url(./assets/Fonts/Together.ttf);
 }
 
+motion {
+  overflow-x: hidden;
+}
+
 html {
   margin: 0;
   padding: 0;

@@ -4,7 +4,7 @@ export interface IProcedura {
   secondPrice: string;
 }
 
-export interface IProcedury{
+export interface IProcedury {
   osetreniePleti: Array<IProcedura>;
   exkluzivneOsetrenia: Array<IProcedura>;
   obocieMihalnice: Array<IProcedura>;
@@ -14,4 +14,12 @@ export interface IProcedury{
 
 export interface IProceduryList {
   procedury: IProcedury;
+}
+
+export interface IProceduraData {
+  id: number;
+  title: string;
+  image: string;
+  summary: string;
+  description: React.ReactNode;
 }

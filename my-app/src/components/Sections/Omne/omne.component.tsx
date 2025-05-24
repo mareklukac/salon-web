@@ -16,18 +16,18 @@ const Omne: React.FC = () => {
             className="omne-photo"
             src={omnePhoto}
             alt="profile"
-            initial={{ x: 100, opacity: 0 }}
+            initial={{ x: [0, 100, 0], opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            viewport={{ once: false, amount: 0.4 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.4 }}
           />
         </div>
         <motion.div
           className="omne-inner-section omne-inner-paragraph-section"
-          initial={{ opacity: 0, y: 0 }}
+          initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1, duration: 0.6, ease: "easeOut" }}
-          viewport={{ once: false, amount: 0.3 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          viewport={{ once: false, amount: 0.5 }}
         >
           <h3>MÁRIA LUKÁČOVÁ</h3>
           <p>

@@ -23,6 +23,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   overflow: hidden;
 }
 
@@ -47,6 +48,8 @@
   cursor: pointer;
   margin: 0 1rem;
   align-self: center;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }
 
 .slide.full {
@@ -88,7 +91,7 @@
   border: none;
   color: white;
   cursor: pointer;
-  z-index: 2;
+  z-index: 1000;
 }
 
 .arrow.left {
@@ -120,6 +123,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   z-index: 10;
 }
 
@@ -182,8 +186,35 @@
   color: #ccc;
 }
 
+.indicators {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.indicator-dot {
+  height: 10px;
+  width: 10px;
+  margin: 5px;
+  border-radius: 50%;
+  background-color: #bbb;
+  transition: background-color 0.3s ease;
+}
+
+.indicator-dot.active {
+  background-color: var(--accent-3); /* or any highlighted color */
+}
 @media (max-width: 768px) {
   .modal-arrow {
     display: none;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .slide {
+    height: 200px;
+    width: 200px;
   }
 }

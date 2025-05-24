@@ -3,6 +3,8 @@
   align-items: center;
   flex-direction: column;
   padding-top: 5%;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .omne-container h2 {
@@ -55,7 +57,7 @@
   .omne-inner-container {
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .omne-inner-section {
