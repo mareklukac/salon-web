@@ -50,6 +50,12 @@
   font-weight: 700;
 }
 
+.nav-ul a.active {
+  color: #f06c00;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
 .logo-button a {
   text-decoration: none;
   color: inherit;

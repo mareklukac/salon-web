@@ -2,9 +2,19 @@ import React, { useEffect, useRef, useState } from "react";
 import "./navbar-menu.layout.css";
 import logo from "../../../assets/logo_png.png";
 
+const SECTIONS = [
+  { label: "O MNE", id: "omne" },
+  { label: "PROCEDURY", id: "procedury" },
+  { label: "PRODUKTY", id: "produkty" },
+  { label: "CENNÍK", id: "cennik" },
+  { label: "GALÉRIA", id: "galeria" },
+  { label: "KONTAKT", id: "kontakt" },
+];
+
 const NavMenu: React.FC = () => {
   const navRef = useRef<HTMLElement | null>(null);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState<string | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,19 +27,48 @@ const NavMenu: React.FC = () => {
       }
     };
 
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const id = (entry.target as HTMLElement).id;
+            setActiveSection(id);
+            window.history.pushState(null, "", `/${id}`);
+          }
+        });
+      },
+      { threshold: 0.6 }
+    );
+    const sectionEls = document.querySelectorAll("section");
+    sectionEls.forEach((section) => observer.observe(section));
+
     window.addEventListener("scroll", handleScroll);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      observer.disconnect();
     };
   }, []);
 
-  const handleLinkClick = () => setMenuOpen(false);
+  const handleLinkClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    id: string
+  ) => {
+    e.preventDefault();
+
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+      window.history.pushState(null, "", `/${id}`);
+    }
+
+    setMenuOpen(false);
+  };
 
   return (
     <nav className="nav" ref={navRef}>
       <div className="logo-button">
-        <a href="#home-section">
+        <a href="home">
           <img alt="logo" src={logo}></img>
         </a>
       </div>
@@ -42,16 +81,13 @@ const NavMenu: React.FC = () => {
 
       <div className={`nav-buttons ${menuOpen ? "open" : ""}`}>
         <ul className="nav-ul">
-          {[
-            { label: "O MNE", href: "#omne-section" },
-            { label: "PROCEDURY", href: "#procedury-section" },
-            { label: "PRODUKTY", href: "#produkty-section" },
-            { label: "CENNÍK", href: "#cennik-section" },
-            { label: "GALÉRIA", href: "#galeria-section" },
-            { label: "KONTAKT", href: "#kontakt-section" },
-          ].map(({ label, href }) => (
+          {SECTIONS.map(({ label, id }) => (
             <li className="nav-li" key={label}>
-              <a href={href} onClick={handleLinkClick}>
+              <a
+                href={`#${id}`}
+                onClick={(e) => handleLinkClick(e, id)}
+                className={activeSection === id ? "active" : ""}
+              >
                 {label}
               </a>
             </li>
