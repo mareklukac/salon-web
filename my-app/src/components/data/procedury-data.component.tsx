@@ -1,11 +1,15 @@
-import placeholder from "../placeholder.png";
+import upravaMihalnicObocia from "../../assets/procedury/uprava-mihalnic-obocie.png";
+import osetreniaPleti from "../../assets/procedury/osetrenie-pleti.png";
+import pristrojoveOsetreniaPleti from "../../assets/procedury/pristrojove-osetrenie-pleti.png";
+import plasmaPen from "../../assets/procedury/plasma-pen.png";
+import permanentnyMakeup from "../../assets/procedury/permanentny-makeup.png";
 import { IProceduraData } from "../../Utils/Interfaces/procedury.interface";
 
 export const proceduryData: IProceduraData[] = [
   {
     id: 1,
     title: "Ošetrenia pleti",
-    image: placeholder,
+    image: osetreniaPleti,
     summary:
       "Snívate o pleti, ktorá je nielen čistá, ale aj hlboko vyživená, zregenerovaná a plná zdravého lesku? V našom salóne veríme, že cesta k dokonalej pleti vedie cez..",
     description: (
@@ -55,7 +59,7 @@ export const proceduryData: IProceduraData[] = [
   {
     id: 2,
     title: "Prístrojové ošetrenia pleti",
-    image: placeholder,
+    image: pristrojoveOsetreniaPleti,
     summary:
       "Preskúmajte novú úroveň starostlivosti o pleť vďaka našim prístrojovým ošetreniam. Ak túžite po pleti, ktorá žiari zdravím, vitalitou a mladistvým vzhľadom, v salóne...",
     description: (
@@ -126,7 +130,7 @@ export const proceduryData: IProceduraData[] = [
   {
     id: 3,
     title: "Úprava mihalníc a obočia",
-    image: placeholder,
+    image: upravaMihalnicObocia,
     summary:
       "Oči sú zrkadlom duše a s nami sa stanú vašou najvýraznejšou vizitkou! Dokonalé obočie a podmanivé mihalnice dokážu úplne zmeniť výraz tváre a zvýrazniť vašu prirodzenú...",
     description: (
@@ -184,7 +188,7 @@ export const proceduryData: IProceduraData[] = [
   {
     id: 4,
     title: "Permanentný make-up",
-    image: placeholder,
+    image: permanentnyMakeup,
     summary:
       "Prebuďte sa každý deň krásna a sebavedomá bez potreby líčenia. Permanentný make-up je ideálny pre ženy, ktoré chcú vždy upravený vzhľad bez každodenného nanášania...",
     description: (
@@ -247,7 +251,7 @@ export const proceduryData: IProceduraData[] = [
   {
     id: 5,
     title: "Plasma Pen",
-    image: placeholder,
+    image: plasmaPen,
     summary:
       "Túžite po viditeľnom omladení bez chirurgického zákroku? Prinášame prelomové technológie Plasma Pen a Fibroblast - neinvazívnu revolúciu v estetickej medicíne...",
     description: (
