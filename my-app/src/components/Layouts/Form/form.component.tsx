@@ -3,7 +3,7 @@ import emailjs from "emailjs-com";
 
 import "./form.component.css";
 
-const SERVICE_ID = "service_mareklukac08";
+const SERVICE_ID = "service_mayabeauty";
 const TEMPLATE_ID = "template_testsetup";
 const PUBLIC_KEY = "VdETkktU9QKLeBXNu";
 
