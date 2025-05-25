@@ -3,137 +3,127 @@
     "osetreniePleti": [
       {
         "name": "Hĺbkové čistenie pleti",
-        "price": "38",
+        "price": "40",
         "secondPrice": ""
       },
       {
         "name": "Hĺbkové čistenie pleti s masážou",
-        "price": "48",
+        "price": "50",
         "secondPrice": ""
       },
       {
-        "name": "PRIMALUCE ošetrenie chem. peelingom",
+        "name": "REVITAL ošetrenie BIOLINE",
         "price": "55",
         "secondPrice": ""
       },
       {
-        "name": "Hydro-dermabrázia",
+        "name": "REVITAL ošetrenie ALISSA",
+        "price": "50",
+        "secondPrice": ""
+      },
+      {
+        "name": "WHITENING Alissa",
+        "price": "53",
+        "secondPrice": ""
+      },
+      {
+        "name": "PROCEUTIC",
+        "price": "55",
+        "secondPrice": ""
+      },
+      {
+        "name": "PRIMALUCE",
+        "price": "58",
+        "secondPrice": ""
+      },
+      {
+        "name": "DE-OX vit. C",
+        "price": "72",
+        "secondPrice": ""
+      },
+      {
+        "name": "LIFTING CODE (protokol)",
+        "price": "78",
+        "secondPrice": ""
+      },
+      {
+        "name": "RETINOL A3",
+        "price": "80",
+        "secondPrice": ""
+      }
+    ],
+    "pristrojoveOsetrenia": [
+      {
+        "name": "Diamantová mikrodermabrázia",
+        "price": "48",
+        "secondPrice": ""
+      },
+      {
+        "name": "HYDRABRÁZIA",
         "price": "52",
         "secondPrice": ""
       },
       {
-        "name": "Liftingové ošetrenie",
+        "name": "Nanohydratácia pleti",
+        "price": "50",
+        "secondPrice": ""
+      },
+      {
+        "name": "MEZOTERAPIA neinvaz.",
         "price": "55",
         "secondPrice": ""
       },
       {
-        "name": "Ošetrenie REFRESH na mieru",
-        "price": "48",
-        "secondPrice": ""
-      },
-      {
-        "name": "TIMELESS",
-        "price": "48",
-        "secondPrice": ""
-      }
-    ],
-    "exkluzivneOsetrenia": [
-      {
-        "name": "Ošetrenie plné vitamínu C",
-        "price": "70",
-        "secondPrice": ""
-      },
-      {
-        "name": "Luxusné protokolárne ošetrenie: LIFTING CODE",
-        "price": "77",
-        "secondPrice": ""
-      },
-      {
-        "name": "Intenzívne upokojujúce ošetrenie",
-        "price": "48",
-        "secondPrice": ""
-      },
-      {
-        "name": "Rádiofrekvencia tvár/tvár+dekolt",
-        "price": "49",
-        "secondPrice": "53"
-      },
-      {
-        "name": "Rádiofrekvencia tvár/tvár+dekolt s masážou",
+        "name": "Rádiofrekvencia",
         "price": "55",
-        "secondPrice": "60"
+        "secondPrice": ""
       },
       {
-        "name": "Nanohydratácia okysličenie pleti",
+        "name": "MAN ošetrenie",
         "price": "47",
-        "secondPrice": "52"
-      },
-      {
-        "name": "Mezoterapia",
-        "price": "49",
-        "secondPrice": ""
-      },
-      {
-        "name": "Fototerapia k ošetreniam",
-        "price": "6",
         "secondPrice": ""
       }
     ],
-    "obocieMihalnice": [
+    "mihalniceObocie": [
       {
-        "name": "Formovanie obočia",
-        "price": "6",
-        "secondPrice": ""
-      },
-      {
-        "name": "Farbenie obočia",
-        "price": "6",
-        "secondPrice": ""
-      },
-      {
-        "name": "Kompletná úprava obočia",
+        "name": "Úprava a farbenie obočia",
         "price": "12",
         "secondPrice": ""
       },
       {
-        "name": "Laminácia obočia",
-        "price": "30",
-        "secondPrice": ""
-      },
-      {
-        "name": "Farbenie rias",
+        "name": "Farbenie mihalníc",
         "price": "7",
         "secondPrice": ""
       },
       {
-        "name": "Lash lift",
-        "price": "30",
+        "name": "Lash lifting",
+        "price": "35",
         "secondPrice": ""
       },
       {
         "name": "3D mihalnice",
-        "price": "38",
+        "price": "40",
         "secondPrice": ""
       },
       {
-        "name": "Doplnenie mihalníc",
-        "price": "30",
+        "name": "Doplnenie mihalníc (do 3 týždňov)",
+        "price": "35",
         "secondPrice": ""
       },
       {
         "name": "Odstránenie mihalníc",
-        "price": "7",
+        "price": "8",
         "secondPrice": ""
       }
     ],
     "pmu": [
       {
-        "name": "Nové tetovanie obočia",
+        "name": "Nové powder brows",
         "price": "150",
         "secondPrice": ""
       },
       {
-        "name": "Korekcia obočia (do 2 mesiacov)",
+        "name": "Korekcia (do 2 mesiacov)",
         "price": "50",
         "secondPrice": ""
       },
@@ -143,7 +133,7 @@
         "secondPrice": ""
       }
     ],
-    "firoblastPlazmaPen": [
+    "plazmaPen": [
       {
         "name": "Horné viečka",
         "price": "120",
@@ -160,12 +150,12 @@
         "secondPrice": ""
       },
       {
-        "name": "Vejarovité vrásky okolo očí",
+        "name": "Vrásky okolo očí",
         "price": "100",
         "secondPrice": ""
       },
       {
-        "name": "Horné viečka + vrásky okolo očí",
+        "name": "Vrásky + horné viečka",
         "price": "200",
         "secondPrice": ""
       },
@@ -185,12 +175,12 @@
         "secondPrice": ""
       },
       {
-        "name": "Vráska okolo úst",
+        "name": "Vrásky okolo úst",
         "price": "140",
         "secondPrice": ""
       },
       {
-        "name": "Vrásky nad hornou perou (fajčiarske)",
+        "name": "\"Fajčiarske\" vrásky",
         "price": "100",
         "secondPrice": ""
       },
@@ -202,11 +192,6 @@
       {
         "name": "Jazvy, pigmentové škvrny, fibrómy",
         "price": "50",
-        "secondPrice": ""
-      },
-      {
-        "name": "Konzultácia (odrátaná pri ošetrení)",
-        "price": "20",
         "secondPrice": ""
       }
     ]

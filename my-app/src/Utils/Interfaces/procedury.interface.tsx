@@ -6,10 +6,10 @@ export interface IProcedura {
 
 export interface IProcedury {
   osetreniePleti: Array<IProcedura>;
-  exkluzivneOsetrenia: Array<IProcedura>;
-  obocieMihalnice: Array<IProcedura>;
+  pristrojoveOsetrenia: Array<IProcedura>;
+  mihalniceObocie: Array<IProcedura>;
   pmu: Array<IProcedura>;
-  firoblastPlazmaPen: Array<IProcedura>;
+  plazmaPen: Array<IProcedura>;
 }
 
 export interface IProceduryList {

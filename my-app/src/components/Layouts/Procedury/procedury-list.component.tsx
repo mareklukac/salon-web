@@ -12,8 +12,8 @@ const ProceduryListComponent: React.FC = () => {
     <div className="section-container">
       <div className="procedury-component-container">
         <div className="procedury-section">
-          <h3>Exkluzívne ošetrenia</h3>
-          {proceduryList.exkluzivneOsetrenia.map((item: IProcedura) => (
+          <h3>Prístrojové ošetrenia</h3>
+          {proceduryList.pristrojoveOsetrenia.map((item: IProcedura) => (
             <ProceduraComponent
               name={item.name}
               price={item.price}
@@ -22,8 +22,8 @@ const ProceduryListComponent: React.FC = () => {
           ))}
         </div>
         <div className="procedury-section">
-          <h3>Firoblast / PlazmaPen</h3>
-          {proceduryList.firoblastPlazmaPen.map((item: IProcedura) => (
+          <h3>Mihalnice a Obočie</h3>
+          {proceduryList.mihalniceObocie.map((item: IProcedura) => (
             <ProceduraComponent
               name={item.name}
               price={item.price}
@@ -32,8 +32,8 @@ const ProceduryListComponent: React.FC = () => {
           ))}
         </div>
         <div className="procedury-section">
-          <h3>Obočie + Mihalnice</h3>
-          {proceduryList.obocieMihalnice.map((item: IProcedura) => (
+          <h3>PMU</h3>
+          {proceduryList.pmu.map((item: IProcedura) => (
             <ProceduraComponent
               name={item.name}
               price={item.price}
@@ -52,8 +52,8 @@ const ProceduryListComponent: React.FC = () => {
           ))}
         </div>
         <div className="procedury-section">
-          <h3>PMU: Púdrové tetovanie obočia</h3>
-          {proceduryList.pmu.map((item: IProcedura) => (
+          <h3>Plasma Pen</h3>
+          {proceduryList.plazmaPen.map((item: IProcedura) => (
             <ProceduraComponent
               name={item.name}
               price={item.price}
