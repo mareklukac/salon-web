@@ -48,7 +48,7 @@ const Kontakt: React.FC = () => {
           </div>
           <div className="contact-adress-information">
             <FontAwesomeIcon className="contact-adress-icon" icon={faAt} />
-            <p>maja.lukacovaa@gmail.com</p>
+            <p>mayabeauty.ke@gmail.com</p>
           </div>
           <div className="contact-adress-information">
             <FontAwesomeIcon
