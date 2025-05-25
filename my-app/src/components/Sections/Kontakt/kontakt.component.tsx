@@ -42,8 +42,8 @@ const Kontakt: React.FC = () => {
           <h3 className="contact-header">Kontaktné informácie:</h3>
           <div className="contact-adress-information">
             <FontAwesomeIcon className="contact-adress-icon" icon={faPhone} />
-            <a className="contact-link" href="tel:+421904545542">
-              +421 904 545 542
+            <a className="contact-link" href="tel:+421911604896">
+              +421 911 604 896
             </a>
           </div>
           <div className="contact-adress-information">
