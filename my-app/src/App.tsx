@@ -174,7 +174,6 @@ const useCookieConsent = () => {
       },
 
       onConsent: ({ cookie }) => {
-        console.log("Consent:", cookie);
         const categories = cookie.categories || [];
         if (categories.includes("analytics")) {
           loadGTM();
@@ -185,9 +184,7 @@ const useCookieConsent = () => {
         }
       },
 
-      onChange: ({ cookie }) => {
-        console.log("Changed:", cookie);
-      },
+      onChange: ({ cookie }) => {},
     });
   }, []);
 };
