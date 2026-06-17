@@ -15,7 +15,47 @@
   --accent-1: #b76e79;
   --accent-2: #e5e1e6;
   --accent-3: #e55e0c;
+  --accent-3-opacity: rgba(228, 95, 12, 0.5);
   font-family: "Roboto Condensed", sans-serif;
+}
+
+#cc-main {
+  /** Change font **/
+  --cc-font-family: "Roboto Condensed", sans-serif;
+
+  /** Change background color **/
+  --cc-bg: var(--primary-1);
+  --cc-cookie-category-block-bg: var(--primary-3);
+  --cc-cookie-category-block-hover-bg: var(--primary-3);
+  --cc-cookie-category-block-hover-border: var(--primary-3);
+  --cc-cookie-category-expanded-block-hover-bg: var(--primary-3);
+
+  /** Change toggle color **/
+  --cc-toggle-off-bg: var(--secondary-2);
+  --cc-toggle-on-knob-bg: var(--primary-1);
+
+  /** Also make toggles the same color as the button **/
+  --cc-toggle-on-bg: var(--cc-btn-primary-bg);
+
+  --cc-toggle-readonly-bg: var(--accent-3-opacity);
+  --cc-toggle-readonly-knob-icon-color: var(--accent-3);
+
+  /** Change button primary color **/
+  --cc-btn-primary-bg: var(--accent-3);
+  --cc-btn-primary-border-color: var(--accent-3);
+  --cc-btn-primary-hover-bg: var(--accent-1);
+  --cc-btn-primary-hover-border-color: var(--accent-1);
+
+  /** Change button secondary color **/
+  --cc-btn-secondary-bg: var(--primary-3);
+  --cc-btn-secondary-hover-bg: var(--secondary-2);
+
+  /** Make the buttons a bit rounder **/
+  --cc-btn-border-radius: 10px;
+}
+
+#cc-main .pm__section--expandable .pm__section-arrow {
+  background: none !important;
 }
 
 body {
