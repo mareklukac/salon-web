@@ -8,6 +8,9 @@ import Cennik from "./components/Sections/Cennik/cennik.component";
 import Galeria from "./components/Sections/Galeria/galeria.component";
 import NavMenu from "./components/Layouts/Navbar/navbar-menu.layout";
 import { useEffect } from "react";
+import * as CookieConsent from "vanilla-cookieconsent";
+import "vanilla-cookieconsent/dist/cookieconsent.css";
+import loadGTM from "./Utils/functions/loaderGTM";
 
 const useScrollRouting = () => {
   useEffect(() => {
@@ -23,7 +26,7 @@ const useScrollRouting = () => {
           }
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.5 },
     );
 
     const sections = document.querySelectorAll("section");
@@ -33,8 +36,165 @@ const useScrollRouting = () => {
   }, []);
 };
 
+const useCookieConsent = () => {
+  useEffect(() => {
+    CookieConsent.run({
+      guiOptions: {
+        consentModal: {
+          layout: "box",
+          position: "bottom right",
+          equalWeightButtons: true,
+          flipButtons: false,
+        },
+        preferencesModal: {
+          layout: "box",
+          equalWeightButtons: true,
+          flipButtons: false,
+        },
+      },
+
+      categories: {
+        necessary: {
+          enabled: true,
+          readOnly: true,
+        },
+
+        analytics: {
+          enabled: false,
+          autoClear: {
+            cookies: [
+              {
+                name: /^_ga/,
+              },
+            ],
+          },
+        },
+        marketing: {
+          enabled: false,
+        },
+
+        functional: {
+          enabled: false,
+        },
+      },
+
+      language: {
+        default: "sk",
+        translations: {
+          sk: {
+            consentModal: {
+              title: "Používame cookies 🍪",
+              description:
+                "Používame cookies na fungovanie stránky a analýzu návštevnosti.",
+              acceptAllBtn: "Prijať všetko",
+              acceptNecessaryBtn: "Len nevyhnutné",
+              showPreferencesBtn: "Nastavenia",
+            },
+
+            preferencesModal: {
+              title: "Nastavenia cookies",
+
+              acceptAllBtn: "Prijať všetko",
+              acceptNecessaryBtn: "Len nevyhnutné",
+              savePreferencesBtn: "Uložiť nastavenia",
+
+              sections: [
+                {
+                  title: "Používanie cookies",
+                  description: "Vyberte si, ktoré cookies chcete povoliť.",
+                },
+                {
+                  title: "Nevyhnutné cookies",
+                  description:
+                    "Tieto cookies sú potrebné pre správne fungovanie webu.",
+                  linkedCategory: "necessary",
+                },
+                {
+                  title: "Funkčné cookies",
+                  description:
+                    "Tieto cookies umožňujú používanie pokročilých funkcií webu.",
+                  linkedCategory: "functional",
+                },
+                {
+                  title: "Analytické cookies",
+                  description:
+                    "Pomáhajú nám zlepšovať web pomocou štatistík návštevnosti.",
+                  linkedCategory: "analytics",
+                },
+                {
+                  title: "Marketingové cookies",
+                  description:
+                    "Pomáhajú nám zlepšovať web pomocou marketingových nástrojov.",
+                  linkedCategory: "marketing",
+                },
+              ],
+            },
+          },
+          en: {
+            consentModal: {
+              title: "We use cookies 🍪",
+              description: "Cookie modal description",
+              acceptAllBtn: "Accept all",
+              acceptNecessaryBtn: "Reject all",
+              showPreferencesBtn: "Manage Individual preferences",
+            },
+            preferencesModal: {
+              title: "Manage cookie preferences",
+              acceptAllBtn: "Accept all",
+              acceptNecessaryBtn: "Reject all",
+              savePreferencesBtn: "Accept current selection",
+              closeIconLabel: "Close modal",
+              sections: [
+                {
+                  title: "Somebody said ... cookies?",
+                  description: "I want one!",
+                },
+                {
+                  title: "Strictly Necessary cookies",
+                  description:
+                    "These cookies are essential for the proper functioning of the website and cannot be disabled.",
+
+                  linkedCategory: "necessary",
+                },
+                {
+                  title: "Performance and Analytics",
+                  description:
+                    "These cookies collect information about how you use our website. All of the data is anonymized and cannot be used to identify you.",
+                  linkedCategory: "analytics",
+                },
+                {
+                  title: "More information",
+                  description:
+                    'For any queries in relation to my policy on cookies and your choices, please <a href="#contact-page">contact us</a>',
+                },
+              ],
+            },
+          },
+        },
+      },
+
+      onConsent: ({ cookie }) => {
+        console.log("Consent:", cookie);
+        const categories = cookie.categories || [];
+        if (categories.includes("analytics")) {
+          loadGTM();
+        }
+
+        if (categories.includes("functional")) {
+          console.log("Functional cookies enabled (e.g. maps)");
+        }
+      },
+
+      onChange: ({ cookie }) => {
+        console.log("Changed:", cookie);
+      },
+    });
+  }, []);
+};
+
 function App() {
   useScrollRouting();
+  useCookieConsent();
   return (
     <>
       <NavMenu />

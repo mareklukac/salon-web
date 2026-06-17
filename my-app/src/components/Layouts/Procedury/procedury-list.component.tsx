@@ -15,6 +15,7 @@ const ProceduryListComponent: React.FC = () => {
           <h3>Prístrojové ošetrenia</h3>
           {proceduryList.pristrojoveOsetrenia.map((item: IProcedura) => (
             <ProceduraComponent
+              key={item.name}
               name={item.name}
               price={item.price}
               secondPrice={item.secondPrice}
@@ -25,6 +26,7 @@ const ProceduryListComponent: React.FC = () => {
           <h3>Mihalnice a Obočie</h3>
           {proceduryList.mihalniceObocie.map((item: IProcedura) => (
             <ProceduraComponent
+              key={item.name}
               name={item.name}
               price={item.price}
               secondPrice={item.secondPrice}
@@ -35,6 +37,7 @@ const ProceduryListComponent: React.FC = () => {
           <h3>PMU</h3>
           {proceduryList.pmu.map((item: IProcedura) => (
             <ProceduraComponent
+              key={item.name}
               name={item.name}
               price={item.price}
               secondPrice={item.secondPrice}
@@ -45,6 +48,7 @@ const ProceduryListComponent: React.FC = () => {
           <h3>Ošetrenie pleti</h3>
           {proceduryList.osetreniePleti.map((item: IProcedura) => (
             <ProceduraComponent
+              key={item.name}
               name={item.name}
               price={item.price}
               secondPrice={item.secondPrice}
@@ -55,6 +59,7 @@ const ProceduryListComponent: React.FC = () => {
           <h3>Plasma Pen</h3>
           {proceduryList.plazmaPen.map((item: IProcedura) => (
             <ProceduraComponent
+              key={item.name}
               name={item.name}
               price={item.price}
               secondPrice={item.secondPrice}

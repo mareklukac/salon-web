@@ -9,6 +9,7 @@ import {
 import { motion } from "framer-motion";
 
 import { proceduryData } from "../../data/procedury-data.component";
+import { IProceduraData } from "../../../Utils/Interfaces/procedury.interface";
 
 const itemHeight = 400;
 
@@ -16,7 +17,7 @@ const Procedury: React.FC = () => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [maxVisible, setMaxVisible] = useState(0);
   const [expandedDescriptions, setExpandedDescriptions] = useState<number[]>(
-    []
+    [],
   );
 
   useEffect(() => {
@@ -37,7 +38,7 @@ const Procedury: React.FC = () => {
 
   const toggleDescription = (id: number) => {
     setExpandedDescriptions((prev) =>
-      prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id]
+      prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id],
     );
   };
 
@@ -46,7 +47,7 @@ const Procedury: React.FC = () => {
       <h2>PROCEDÚRY</h2>
       <Divider />
       <div className="procedury-inner-container">
-        {visibleProcedury.map((procedura: any, index: any) => (
+        {visibleProcedury.map((procedura: IProceduraData, index: number) => (
           <article
             key={procedura.id}
             className={`procedura ${index % 2 === 0 ? "reverse" : ""}`}

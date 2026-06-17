@@ -9,16 +9,18 @@ const containerStyle = {
   height: "400px",
 };
 
+const libraries: "marker"[] = ["marker"];
+
 const GoogleMapsComponent: React.FC = () => {
   const mapRef = useRef<google.maps.Map | null>(null);
   const markerRef = useRef<google.maps.marker.AdvancedMarkerElement | null>(
-    null
+    null,
   );
   const mapDivRef = useRef<HTMLDivElement>(null);
 
   const { isLoaded } = useJsApiLoader({
     googleMapsApiKey: "AIzaSyBQtKvza3QtIuThIxlsmAhJ8IGxm0Ys9yk",
-    libraries: ["marker"],
+    libraries,
   });
 
   useEffect(() => {
